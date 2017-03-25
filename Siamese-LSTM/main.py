@@ -7,6 +7,7 @@ from flask_socketio import SocketIO, send, emit, join_room, leave_room, \
 import json
 
 from lstm import *
+sls=lstm("bestsem.p",load=True,training=False)
 async_mode = None
 
 app = Flask(__name__)
