@@ -1,8 +1,9 @@
-# Byte-compiled / optimized / DLL files
+#Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.tar
+*.gz
 # C extensions
 *.so
 
@@ -87,3 +88,15 @@ ENV/
 
 # Rope project settings
 .ropeproject
+swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# # auto-generated tag files
+tags
