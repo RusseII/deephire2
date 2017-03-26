@@ -2,6 +2,9 @@ import urllib2
 import json
 
 
+# USEAGE
+# ats = ATS()
+# ats.get_all()
 class ATS:
 
     def __init__(self):
@@ -41,7 +44,3 @@ class ATS:
             people.append(person_info)
         print(people)
         return people
-
-
-ats = ATS()
-ats.get_all()
