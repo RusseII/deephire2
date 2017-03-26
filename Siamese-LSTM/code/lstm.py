@@ -398,8 +398,8 @@ class lstm():
         emb1=np.swapaxes(trconv,1,2)
         return self.f2sim(emb1,mas1,emb2,mas2)
 
-d2=pickle.load(open("synsem.p",'rb'))
-dtr=pickle.load(open("dwords.p",'rb'))
+d2=pickle.load(open("code/synsem.p",'rb'))
+dtr=pickle.load(open("code/dwords.p",'rb'))
 #d2=dtr
 #model=pickle.load(open("Semevalembed.p","rb"))
 

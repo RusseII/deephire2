@@ -418,7 +418,7 @@ cachedStopWords=stopwords.words("english")
 training=True #Loads best saved model if False
 Syn_aug=True # If true, performs better on Test dataset but longer training time
 print "Loading word2vec"
-model = word2vec.Word2Vec.load_word2vec_format("GoogleNews-vectors-negative300.bin.gz",binary=True)
+model = word2vec.KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin.gz",binary=True)
 options=locals().copy()
 
 
