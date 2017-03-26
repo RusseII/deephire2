@@ -18,5 +18,7 @@ class db():
         return self.c.fetchall()        
     def close(self):
         self.conn.close() #TODO MAKE SOMETHING TO CLOSE CONNECTION
+    
+
 #db().query("UPDATE stats set visits = visits +1y
 #print db().query("SELECT visits FROM stats")[0][0]

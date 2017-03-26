@@ -5,6 +5,7 @@ from werkzeug.utils import secure_filename
 import json
 
 from code.lstm import *
+
 sls=lstm("code/bestsem.p",load=True,training=False)
 async_mode = None
 
@@ -30,9 +31,12 @@ def return_sim():
     
 @app.route('/json', methods=['GET', 'POST'] )
 def test():
-    x= {"people": [ {"questions": ["score1","score2","score2","score3"], "name": "Russell", "score" : 2.2},{"name": "Nick", "score" : 1.5}]}
+    x={"people": [ {"questions": ["score1","score2","score2","score3"], "answers": ["a1","a2","a3","a4"], "name": "Russell", "score" : 2.2}, {"name": "Nick", "score" : 1.5}]}
     print type(x)
     return json.dumps(x)
+
+
+
 
 if __name__ == "__main__":
     app.run() 
