@@ -40,7 +40,7 @@ class ATS:
             first, last = self.get_names(applicant_id['prospect_id'])
             person_info['answers'] = self.get_answers(applicant_id['prospect_id'])
             person_info['first_name'] = first
-            person_info['first_name'] = last
+            person_info['last_name'] = last
             people.append(person_info)
-        print(people)
+        # print(people)
         return people
